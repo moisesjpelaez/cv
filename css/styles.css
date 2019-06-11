@@ -1,8 +1,27 @@
+/************************************************************/
+/* Fonts */
+
 @font-face {
     font-family: glaciar;
     src: url("../fonts/GlacialIndifference-Regular.otf");
 }
 
+/************************************************************/
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 1em;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
+/************************************************************/
+/* General tags */
 * {
     font-family: glaciar;
     -webkit-user-select: none;
@@ -13,8 +32,34 @@ body {
     padding: 0;
 }
 
+section {
+    padding-top: 17rem;
+}
+
 /************************************************************/
 /* Jumbotron */
 .st-jumbotron {
     margin: 0;
+}
+
+/************************************************************/
+/* Projects */
+.st-img-nonelands {
+    background-image: url("../img/nonelands-demo.jpg");
+}
+
+.st-img-gallinahen {
+    background-image: url("../img/gallina-hen-reloaded.jpg");
+}
+
+.st-card-img {
+    height: 240px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.st-card {
+    max-width: 540px;
+    border: none;
 }
