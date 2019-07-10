@@ -60,6 +60,10 @@ section {
     background-image: url("../img/gallina-hen-reloaded.jpg");
 }
 
+.st-img-novadventure {
+    background-image: url("../img/nova-adventure.jpg");
+}
+
 .st-card-img {
     height: 240px;
     background-repeat: no-repeat;
