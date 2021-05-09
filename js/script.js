@@ -8,14 +8,14 @@ $(function()
 
     showSection("#experience");
 
-    $(".nav-link").click(function(){
+    $(".js-navlink").click(function(){
         event.preventDefault();
 
-        if($(this).hasClass("active"))
+        if($(this).parent().hasClass("uk-active"))
             return;
 
-        $(".active").removeClass("active");
+        $(".uk-active").removeClass("uk-active");
         showSection($(this).attr("href"));
-        $(this).addClass("active");
+        $(this).parent().addClass("uk-active");
     });
 });
