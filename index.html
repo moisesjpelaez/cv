@@ -15,143 +15,174 @@
     </head>
 
     <body>
-        <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true; container: true">
-            <div class="uk-offcanvas-bar">
-                <button class="uk-offcanvas-close" type="button" uk-close></button>
-                <ul class="uk-nav uk-nav-default">
-                    <li class="uk-active">
-                        <a class="js-navlink" href="#experience">About</a>
-                    </li>
-                    <li class="uk-nav-divider"></li>
-                    <li class="uk-parent">
-                        <a class="js-navlink" href="#formation">Projects</a>
-                    </li>
-                    <li class="uk-nav-divider"></li>
-                    <li class="uk-parent">
-                        <a class="js-navlink" href="#abilities">Formation</a>
-                    </li>
-                    <li class="uk-nav-divider"></li>
-                    <li class="uk-parent">
-                        <a class="js-navlink" href="#portfolio">Experience</a>
-                    </li>
-                    <li class="uk-nav-divider"></li>
-                    <li class="uk-parentm">
-                        <a class="js-navlink" href="#contact">Contact</a>
-                    </li>
-                </ul>
+        <div uk-grid class="uk-grid-collapse uk-child-width-expand">
+            <div class="uk-width-1-4 uk-visible@m">
+                <div class="uk-position-fixed uk-height-large uk-flex uk-flex-center uk-flex-middle" style="width: inherit;">
+                    <ul class="uk-nav uk-nav-default">
+                        <li class="uk-active">
+                            <a class="js-navlink" href="#about">About</a>
+                        </li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-parent">
+                            <a class="js-navlink" href="#projects">Projects</a>
+                        </li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-parent">
+                            <a class="js-navlink" href="#formation">Formation</a>
+                        </li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-parent">
+                            <a class="js-navlink" href="#experience">Experience</a>
+                        </li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-parentm">
+                            <a class="js-navlink" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div uk-sticky>
-            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover uk-light" data-src="img/cover.png" data-size="" uk-img>
-                <button class="uk-navbar-toggle uk-position-top-right" uk-navbar-toggle-icon type="button" uk-toggle="target: #offcanvas-nav"></button>
-                <h1>Moisés Peláez</h1>
-                <small>Game Designer and Low Poly 3D Artist</small>
+            <div class="uk-width-expand">
+                <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true; container: true">
+                    <div class="uk-offcanvas-bar">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <ul class="uk-nav uk-nav-default">
+                            <li class="uk-active">
+                                <a class="js-navlink" href="#about">About</a>
+                            </li>
+                            <li class="uk-nav-divider"></li>
+                            <li class="uk-parent">
+                                <a class="js-navlink" href="#projects">Projects</a>
+                            </li>
+                            <li class="uk-nav-divider"></li>
+                            <li class="uk-parent">
+                                <a class="js-navlink" href="#formation">Formation</a>
+                            </li>
+                            <li class="uk-nav-divider"></li>
+                            <li class="uk-parent">
+                                <a class="js-navlink" href="#experience">Experience</a>
+                            </li>
+                            <li class="uk-nav-divider"></li>
+                            <li class="uk-parentm">
+                                <a class="js-navlink" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div uk-sticky class="uk-cover-container">
+                    <div class="uk-height-small uk-background-cover uk-light" data-src="img/cover.png" uk-img></div>
+                    <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+                        <button class="uk-navbar-toggle uk-position-top-right uk-hidden@m" uk-navbar-toggle-icon type="button" uk-toggle="target: #offcanvas-nav"></button>
+                        <h1 class="uk-margin-small-top uk-margin-small-bottom">Moisés Peláez</h1>
+                        <small>Game Designer and Low Poly 3D Artist</small>
+                    </div>
+                </div>
+        
+                <div class="uk-container">
+                    <section id="about">
+                        <h3>Game Design and Development</h3>
+                        <ul>
+                            <li>Godot</li>
+                            <li>Unity</li>
+                            <li>Blender</li>
+                            <li>Level Design</li>
+                        </ul>
+        
+                        <h3>Front-End Web Development</h3>
+                        <ul>
+                            <li>HTML5, CSS3, JavaScript & jQuery</li>
+                            <li>Bootstrap 4</li>
+                            <li>ThreeJS & BabylonJS</li>
+                        </ul>
+        
+                        <h3>Idiomas</h3>
+                        <ul>
+                            <li>Español - <em>Native</em></li>
+                            <li>Inglés - <em>Certain fluidity</em></li>
+                        </ul>
+                    </section>
+        
+                    <section id="projects">
+                        <div class="col-lg-5">
+                            <div class="st-card-img st-img-novadventure"></div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Nova Adventure Prototype</h5>
+                                <p class="card-text d-none d-md-block">Pequeño plataformas 3d para clases de Desarrollo de Videojuegos en un Centro Educativo.</p>
+                                <p class="card-text"><small class="text-muted">Hecho el 2019 en Unity</small></p>
+                                <a href="https://gamejolt.com/games/nova-adventure/425328" target="_blank" class="btn btn-light">Download prototype</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-5">
+                            <div class="st-card-img st-img-gallinahen"></div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Gallina Hen Reloaded Prototype</h5>
+                                <p class="card-text d-none d-md-block">Gallina Hen Reloaded es un top-down shooter donde Gallina, el jugador, tendrá que rescatar a los pollitos mientras enfrenta a los demás pollos, quienes creen que Gallina está en su contra.</p>
+                                <p class="card-text"><small class="text-muted">Hecho el 2016 en Unity</small></p>
+                                <a href="https://gamejolt.com/games/gallina-hen-reloaded/259512" target="_blank" class="btn btn-light">Descargar prototipo</a>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-5">
+                            <div class="st-card-img st-img-nonelands"></div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="card-body">
+                                <h5 class="card-title">NoneLands Alpha Demo</h5>
+                                <p class="card-text d-none d-md-block">NoneLands es un videojuego de aventuras plataformas 3d con algunos elementos RPG inspirado en Zelda, Okami, Tomb Raider y algunas sagas de Mario.</p>
+                                <p class="card-text"><small class="text-muted">Hecho el 2014 en Unity</small></p>
+                                <a href="https://gamejolt.com/games/nonelands/45528" target="_blank" class="btn btn-light">Descargar demo</a>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section id="formation">
+                        <h3>Studies</h3>
+                        
+                        <strong>CalArts - Coursera</strong>
+                        <br>
+                        <small>2016</small>
+                        <p>Game Design: Art and Concepts Online Specialization</p>
+                        
+                        <strong>ITLA</strong>
+                        <br>
+                        <small>2014</small>
+                        <p>Mechatronics Superior Technician</p>
+                    </section>
+        
+                    <section id="experience">
+                        <h3>Work Experience</h3>
+                        <strong>Pitech SRL</strong>
+                        <br>
+                        <small>2017 - 2019</small>
+                        <p>Educational Content Designer & Developer</p>
+                        <strong>Edu-Zone</strong>
+                        <br>
+                        <small>2015 - 2016</small>
+                        <p>Software Developer & Lead Software Developer</p>  
+                    </section>
+        
+                    <section id="contact" class="text-center">
+                        <p>I'm an Game Designer and Low Poly 3D Artist from the Dominican Republic and I have been prototyping games with Godot and Unity.</p>
+                        <p>I have strong passion for games and my inspirations come mostly from Nintendo games like Zelda Wind Waker and Metroid Prime but I also like other 3rd person adventure games like A Hat in Time, Tomb Raider, ICO, Shadow of the Colossus and Okami.</p>
+                        <p>As a Game Designer I keep the concepts, game mechanics, narrative and level progression documented and I organize my workflow with Trello. I also prototype those concepts in Godot or Unity and create low poly 3D assets using Blender to test the gameplay and visuals.</p>
+                        <p>If you like my work you can contact me via the following channels.</p>
+                        <div class="text-center">
+                            <button class="btn" type="button"><i class="fas fa-envelope"></i> moises.jpelaez@gmail.com</button>
+                            <button class="btn" type="button"><i class="fab fa-discord"></i> Moises#5633</button>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </div>
-
-        <div class="container">
-            <section id="experience">
-                <h3>Work Experience</h3>
-                <strong>Pitech SRL</strong>
-                <br>
-                <small>2017 - 2019</small>
-                <p>Educational Content Designer & Developer</p>
-                <strong>Edu-Zone</strong>
-                <br>
-                <small>2015 - 2016</small>
-                <p>Software Developer & Lead Software Developer</p>  
-            </section>
-            
-            <section id="formation">
-                <h3>Studies</h3>
-                
-                <strong>CalArts - Coursera</strong>
-                <br>
-                <small>2016</small>
-                <p>Game Design: Art and Concepts Online Specialization</p>
-                
-                <strong>ITLA</strong>
-                <br>
-                <small>2014</small>
-                <p>Mechatronics Superior Technician</p>
-            </section>
-            
-            <section id="abilities">
-                <h3>Game Design and Development</h3>
-                <ul>
-                    <li>Godot</li>
-                    <li>Unity</li>
-                    <li>Blender</li>
-                    <li>Level Design</li>
-                </ul>
-
-                <h3>Front-End Web Development</h3>
-                <ul>
-                    <li>HTML5, CSS3, JavaScript & jQuery</li>
-                    <li>Bootstrap 4</li>
-                    <li>ThreeJS & BabylonJS</li>
-                </ul>
-
-                <h3>Idiomas</h3>
-                <ul>
-                    <li>Español - <em>Native</em></li>
-                    <li>Inglés - <em>Certain fluidity</em></li>
-                </ul>
-            </section>
-
-            <section id="portfolio">
-                <div class="col-lg-5">
-                    <div class="st-card-img st-img-novadventure"></div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="card-body">
-                        <h5 class="card-title">Nova Adventure Prototype</h5>
-                        <p class="card-text d-none d-md-block">Pequeño plataformas 3d para clases de Desarrollo de Videojuegos en un Centro Educativo.</p>
-                        <p class="card-text"><small class="text-muted">Hecho el 2019 en Unity</small></p>
-                        <a href="https://gamejolt.com/games/nova-adventure/425328" target="_blank" class="btn btn-light">Download prototype</a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-5">
-                    <div class="st-card-img st-img-gallinahen"></div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="card-body">
-                        <h5 class="card-title">Gallina Hen Reloaded Prototype</h5>
-                        <p class="card-text d-none d-md-block">Gallina Hen Reloaded es un top-down shooter donde Gallina, el jugador, tendrá que rescatar a los pollitos mientras enfrenta a los demás pollos, quienes creen que Gallina está en su contra.</p>
-                        <p class="card-text"><small class="text-muted">Hecho el 2016 en Unity</small></p>
-                        <a href="https://gamejolt.com/games/gallina-hen-reloaded/259512" target="_blank" class="btn btn-light">Descargar prototipo</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-5">
-                    <div class="st-card-img st-img-nonelands"></div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="card-body">
-                        <h5 class="card-title">NoneLands Alpha Demo</h5>
-                        <p class="card-text d-none d-md-block">NoneLands es un videojuego de aventuras plataformas 3d con algunos elementos RPG inspirado en Zelda, Okami, Tomb Raider y algunas sagas de Mario.</p>
-                        <p class="card-text"><small class="text-muted">Hecho el 2014 en Unity</small></p>
-                        <a href="https://gamejolt.com/games/nonelands/45528" target="_blank" class="btn btn-light">Descargar demo</a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact" class="text-center">
-                <p>I'm an Game Designer and Low Poly 3D Artist from the Dominican Republic and I have been prototyping games with Godot and Unity.</p>
-                <p>I have strong passion for games and my inspirations come mostly from Nintendo games like Zelda Wind Waker and Metroid Prime but I also like other 3rd person adventure games like A Hat in Time, Tomb Raider, ICO, Shadow of the Colossus and Okami.</p>
-                <p>As a Game Designer I keep the concepts, game mechanics, narrative and level progression documented and I organize my workflow with Trello. I also prototype those concepts in Godot or Unity and create low poly 3D assets using Blender to test the gameplay and visuals.</p>
-                <p>If you like my work you can contact me via the following channels.</p>
-                <div class="text-center">
-                    <button class="btn" type="button"><i class="fas fa-envelope"></i> moises.jpelaez@gmail.com</button>
-                    <button class="btn" type="button"><i class="fab fa-discord"></i> Moises#5633</button>
-                </div>
-            </section>
         </div>
 
         <!-- <footer>
-            <p>&copy Moisés Peláez 2019</p>
+            <p>&copy Moisés Peláez 2021</p>
         </footer> -->
 
         <!-- JavaScript Frameworks and Libraries -->

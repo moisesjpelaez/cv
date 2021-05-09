@@ -1,10 +1,10 @@
 /************************************************************/
 /* Fonts */
 
-@font-face {
+/* @font-face {
     font-family: glaciar;
     src: url("../fonts/GlacialIndifference-Regular.otf");
-}
+} */
 
 /************************************************************/
 /* Scrollbar */
@@ -23,11 +23,11 @@ body::-webkit-scrollbar-thumb {
 
 /************************************************************/
 /* General tags */
-* {
+/* * {
     font-family: glaciar;
     -webkit-user-select: none;
     user-select: none;
-}
+} */
 
 body {
     margin: 0;
@@ -40,25 +40,10 @@ body {
 
 /************************************************************/
 /* Jumbotron */
-.st-background {
-    background-image: url("../img/cover.png");
-}
-
-.st-jumbotron {
-    margin: 0;
-    background-image: url("../img/cover.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 25px 0;
-    color: white;
-}
 
 /************************************************************/
 /* Projects */
-.st-navbar {
-    background-color: white;
-}
+
 
 /************************************************************/
 /* Projects */
