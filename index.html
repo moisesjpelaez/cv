@@ -4,6 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png">
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
@@ -14,36 +15,39 @@
     </head>
 
     <body>
-        <div uk-sticky>
-            <div class="uk-cover-background">
-                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover uk-light" data-src="img/cover.png" data-size="" uk-img>
-                    <a class="uk-navbar-toggle uk-hidden@s uk-position-top-right" uk-navbar-toggle-icon href="#"></a>
-                    <h1>Moisés Peláez</h1>
-                    <small>Game Designer and Low Poly 3D Artist</small>
-                </div>
+        <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true; container: true">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active">
+                        <a class="js-navlink" href="#experience">About</a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="js-navlink" href="#formation">Projects</a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="js-navlink" href="#abilities">Formation</a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="js-navlink" href="#portfolio">Experience</a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parentm">
+                        <a class="js-navlink" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-        
-            <nav class="uk-visible@s uk-navbar-container" uk-navbar>
-                <div class="uk-navbar-center">
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active">
-                            <a class="js-navlink" href="#experience">About</a>
-                        </li>
-                        <li class="uk-parent">
-                            <a class="js-navlink" href="#formation">Projects</a>
-                        </li>
-                        <li class="uk-parent">
-                            <a class="js-navlink" href="#abilities">Formation</a>
-                        </li>
-                        <li class="uk-parent">
-                            <a class="js-navlink" href="#portfolio">Experience</a>
-                        </li>
-                        <li class="uk-parentm">
-                            <a class="js-navlink" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        </div>
+
+        <div uk-sticky>
+            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover uk-light" data-src="img/cover.png" data-size="" uk-img>
+                <button class="uk-navbar-toggle uk-position-top-right" uk-navbar-toggle-icon type="button" uk-toggle="target: #offcanvas-nav"></button>
+                <h1>Moisés Peláez</h1>
+                <small>Game Designer and Low Poly 3D Artist</small>
+            </div>
         </div>
 
         <div class="container">
@@ -97,52 +101,51 @@
             </section>
 
             <section id="portfolio">
-                    <div class="col-lg-5">
-                        <div class="st-card-img st-img-novadventure"></div>
+                <div class="col-lg-5">
+                    <div class="st-card-img st-img-novadventure"></div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card-body">
+                        <h5 class="card-title">Nova Adventure Prototype</h5>
+                        <p class="card-text d-none d-md-block">Pequeño plataformas 3d para clases de Desarrollo de Videojuegos en un Centro Educativo.</p>
+                        <p class="card-text"><small class="text-muted">Hecho el 2019 en Unity</small></p>
+                        <a href="https://gamejolt.com/games/nova-adventure/425328" target="_blank" class="btn btn-light">Download prototype</a>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Nova Adventure Prototype</h5>
-                            <p class="card-text d-none d-md-block">Pequeño plataformas 3d para clases de Desarrollo de Videojuegos en un Centro Educativo.</p>
-                            <p class="card-text"><small class="text-muted">Hecho el 2019 en Unity</small></p>
-                            <a href="https://gamejolt.com/games/nova-adventure/425328" target="_blank" class="btn btn-light">Download prototype</a>
-                        </div>
+                </div>
+                
+                <div class="col-lg-5">
+                    <div class="st-card-img st-img-gallinahen"></div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card-body">
+                        <h5 class="card-title">Gallina Hen Reloaded Prototype</h5>
+                        <p class="card-text d-none d-md-block">Gallina Hen Reloaded es un top-down shooter donde Gallina, el jugador, tendrá que rescatar a los pollitos mientras enfrenta a los demás pollos, quienes creen que Gallina está en su contra.</p>
+                        <p class="card-text"><small class="text-muted">Hecho el 2016 en Unity</small></p>
+                        <a href="https://gamejolt.com/games/gallina-hen-reloaded/259512" target="_blank" class="btn btn-light">Descargar prototipo</a>
                     </div>
-                    
-                    <div class="col-lg-5">
-                        <div class="st-card-img st-img-gallinahen"></div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Gallina Hen Reloaded Prototype</h5>
-                            <p class="card-text d-none d-md-block">Gallina Hen Reloaded es un top-down shooter donde Gallina, el jugador, tendrá que rescatar a los pollitos mientras enfrenta a los demás pollos, quienes creen que Gallina está en su contra.</p>
-                            <p class="card-text"><small class="text-muted">Hecho el 2016 en Unity</small></p>
-                            <a href="https://gamejolt.com/games/gallina-hen-reloaded/259512" target="_blank" class="btn btn-light">Descargar prototipo</a>
-                        </div>
-                    </div>
+                </div>
 
-                    <div class="col-lg-5">
-                        <div class="st-card-img st-img-nonelands"></div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="card-body">
-                            <h5 class="card-title">NoneLands Alpha Demo</h5>
-                            <p class="card-text d-none d-md-block">NoneLands es un videojuego de aventuras plataformas 3d con algunos elementos RPG inspirado en Zelda, Okami, Tomb Raider y algunas sagas de Mario.</p>
-                            <p class="card-text"><small class="text-muted">Hecho el 2014 en Unity</small></p>
-                            <a href="https://gamejolt.com/games/nonelands/45528" target="_blank" class="btn btn-light">Descargar demo</a>
-                        </div>
+                <div class="col-lg-5">
+                    <div class="st-card-img st-img-nonelands"></div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card-body">
+                        <h5 class="card-title">NoneLands Alpha Demo</h5>
+                        <p class="card-text d-none d-md-block">NoneLands es un videojuego de aventuras plataformas 3d con algunos elementos RPG inspirado en Zelda, Okami, Tomb Raider y algunas sagas de Mario.</p>
+                        <p class="card-text"><small class="text-muted">Hecho el 2014 en Unity</small></p>
+                        <a href="https://gamejolt.com/games/nonelands/45528" target="_blank" class="btn btn-light">Descargar demo</a>
                     </div>
                 </div>
             </section>
-            
+
             <section id="contact" class="text-center">
                 <p>I'm an Game Designer and Low Poly 3D Artist from the Dominican Republic and I have been prototyping games with Godot and Unity.</p>
                 <p>I have strong passion for games and my inspirations come mostly from Nintendo games like Zelda Wind Waker and Metroid Prime but I also like other 3rd person adventure games like A Hat in Time, Tomb Raider, ICO, Shadow of the Colossus and Okami.</p>
                 <p>As a Game Designer I keep the concepts, game mechanics, narrative and level progression documented and I organize my workflow with Trello. I also prototype those concepts in Godot or Unity and create low poly 3D assets using Blender to test the gameplay and visuals.</p>
                 <p>If you like my work you can contact me via the following channels.</p>
                 <div class="text-center">
-                    <button class="btn btn-light" type="button"><i class="fas fa-envelope"></i> moises.jpelaez@gmail.com</button>
-                    <button class="btn btn-light" type="button"><i class="fab fa-discord"></i> Moises#5633</button>
+                    <button class="btn" type="button"><i class="fas fa-envelope"></i> moises.jpelaez@gmail.com</button>
+                    <button class="btn" type="button"><i class="fab fa-discord"></i> Moises#5633</button>
                 </div>
             </section>
         </div>
@@ -152,10 +155,7 @@
         </footer> -->
 
         <!-- JavaScript Frameworks and Libraries -->
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
         <script src="https://kit.fontawesome.com/3a7cb1dabb.js"></script>

@@ -40,6 +40,10 @@ body {
 
 /************************************************************/
 /* Jumbotron */
+.st-background {
+    background-image: url("../img/cover.png");
+}
+
 .st-jumbotron {
     margin: 0;
     background-image: url("../img/cover.png");
