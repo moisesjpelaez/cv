@@ -16,7 +16,7 @@
 
     <body>
         <div uk-grid class="uk-grid-collapse uk-child-width-expand">
-            <div class="uk-width-1-4 uk-visible@m">
+            <div uk-height-viewport="expand: true" class="uk-width-1-4 uk-visible@m uk-light uk-background-secondary">
                 <div class="uk-position-fixed uk-height-large uk-flex uk-flex-center uk-flex-middle" style="width: inherit;">
                     <ul class="uk-nav uk-nav-default">
                         <li class="uk-active">
@@ -40,6 +40,10 @@
                         </li>
                     </ul>
                 </div>
+                
+                <footer class="uk-margin-small-left uk-position-bottom-left">
+                    <p>&copy Moisés Peláez 2021</p>
+                </footer>
             </div>
 
             <div class="uk-width-expand">
@@ -67,6 +71,10 @@
                                 <a class="js-navlink" href="#contact">Contact</a>
                             </li>
                         </ul>
+
+                        <footer class="uk-margin-small-left uk-position-bottom-left">
+                            <p>&copy Moisés Peláez 2021</p>
+                        </footer>
                     </div>
                 </div>
         
@@ -180,10 +188,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <footer>
-            <p>&copy Moisés Peláez 2021</p>
-        </footer> -->
 
         <!-- JavaScript Frameworks and Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
