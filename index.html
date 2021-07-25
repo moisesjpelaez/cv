@@ -15,6 +15,41 @@
     </head>
 
     <body>
+        <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true;">
+            <div class="uk-offcanvas-bar">
+                <!-- <button class="uk-offcanvas-close" type="button" uk-close></button> -->
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active">
+                        <a class="js-navlink" href="#about">About</a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="js-navlink" href="#projects">Projects</a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="js-navlink" href="#tools">Tools I use</a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="js-navlink" href="#experience">Experience</a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="js-navlink" href="#formation">Formation</a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parentm">
+                        <a class="js-navlink" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <footer class="uk-margin-small-left uk-position-bottom-left uk-postion-fixed">
+                    <p>&copy Moisés Peláez 2021</p>
+                </footer>
+            </div>
+        </div>
+
         <div uk-grid class="uk-grid-collapse uk-child-width-expand">
             <div uk-height-viewport="expand: true" class="uk-width-1-4 uk-visible@m uk-light uk-background-secondary">
                 <div class="uk-position-fixed uk-height-large uk-flex uk-flex-center uk-flex-middle" style="width: inherit;">
@@ -51,41 +86,6 @@
             </div>
 
             <div class="uk-width-expand">
-                <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true; container: true">
-                    <div class="uk-offcanvas-bar">
-                        <button class="uk-offcanvas-close" type="button" uk-close></button>
-                        <ul class="uk-nav uk-nav-default">
-                            <li class="uk-active">
-                                <a class="js-navlink" href="#about">About</a>
-                            </li>
-                            <li class="uk-nav-divider"></li>
-                            <li class="uk-parent">
-                                <a class="js-navlink" href="#projects">Projects</a>
-                            </li>
-                            <li class="uk-nav-divider"></li>
-                            <li class="uk-parent">
-                                <a class="js-navlink" href="#tools">Tools I use</a>
-                            </li>
-                            <li class="uk-nav-divider"></li>
-                            <li class="uk-parent">
-                                <a class="js-navlink" href="#experience">Experience</a>
-                            </li>
-                            <li class="uk-nav-divider"></li>
-                            <li class="uk-parent">
-                                <a class="js-navlink" href="#formation">Formation</a>
-                            </li>
-                            <li class="uk-nav-divider"></li>
-                            <li class="uk-parentm">
-                                <a class="js-navlink" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-
-                        <footer class="uk-margin-small-left uk-position-bottom-left uk-postion-fixed">
-                            <p>&copy Moisés Peláez 2021</p>
-                        </footer>
-                    </div>
-                </div>
-        
                 <div uk-sticky class="uk-cover-container">
                     <div class="uk-height-small uk-background-cover uk-light" data-src="img/cover.png" uk-img></div>
                     <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-flex-column">
