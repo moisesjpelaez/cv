@@ -17,7 +17,6 @@
     <body>
         <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true;">
             <div class="uk-offcanvas-bar">
-                <!-- <button class="uk-offcanvas-close" type="button" uk-close></button> -->
                 <ul class="uk-nav uk-nav-default">
                     <li class="uk-active">
                         <a class="js-navlink" href="#about">About</a>
@@ -28,18 +27,14 @@
                     </li>
                     <li class="uk-nav-divider"></li>
                     <li class="uk-parent">
-                        <a class="js-navlink" href="#tools">Tools I use</a>
+                        <a class="js-navlink" href="#models">3D Models</a>
                     </li>
                     <li class="uk-nav-divider"></li>
                     <li class="uk-parent">
-                        <a class="js-navlink" href="#experience">Experience</a>
+                        <a class="js-navlink" href="#resume">Resume</a>
                     </li>
                     <li class="uk-nav-divider"></li>
                     <li class="uk-parent">
-                        <a class="js-navlink" href="#formation">Formation</a>
-                    </li>
-                    <li class="uk-nav-divider"></li>
-                    <li class="uk-parentm">
                         <a class="js-navlink" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -63,18 +58,14 @@
                         </li>
                         <li class="uk-nav-divider"></li>
                         <li class="uk-parent">
-                            <a class="js-navlink" href="#tools">Tools I use</a>
+                            <a class="js-navlink" href="#models">3D Models</a>
                         </li>
                         <li class="uk-nav-divider"></li>
                         <li class="uk-parent">
-                            <a class="js-navlink" href="#experience">Experience</a>
+                            <a class="js-navlink" href="#resume">Resume</a>
                         </li>
                         <li class="uk-nav-divider"></li>
                         <li class="uk-parent">
-                            <a class="js-navlink" href="#formation">Formation</a>
-                        </li>
-                        <li class="uk-nav-divider"></li>
-                        <li class="uk-parentm">
                             <a class="js-navlink" href="#contact">Contact</a>
                         </li>
                     </ul>
@@ -97,160 +88,230 @@
         
                 <div class="uk-container uk-margin-medium-top uk-margin-medium-bottom">
                     <section id="about">
-                        <p>I'm an Game Designer and Low Poly 3D Artist from the Dominican Republic. I have been prototyping and making small games.</p>
+                        <p>I'm an Game Designer and Low Poly 3D Artist from the Dominican Republic. I have experience designing and prototyping games with Unity, Godot and Blender.</p>
+                        <p>As a Game Designer I keep the concepts, game mechanics, narrative and level progression documented and I organize my workflow with Trello or Milanote. I also prototype my ideas in Godot or Unity and create low poly 3D assets using Blender to test the gameplay and visuals.</p>
                         <p>I have strong passion for games and my inspirations come mostly from Nintendo games like Zelda Wind Waker and Metroid Prime but I also like other 3rd person adventure games like A Hat in Time, Tomb Raider, ICO, Shadow of the Colossus and Okami.</p>
-                        <!-- <p>As a Game Designer I keep the concepts, game mechanics, narrative and level progression documented and I organize my workflow with Trello. I also prototype those concepts in Godot or Unity and create low poly 3D assets using Blender to test the gameplay and visuals.</p> -->
                     </section>
 
-                    <section id="tools">
-                        <strong>Game Design and Development</strong>
-                        <div class="uk-child_width-1-2 uk-margin-small-top" uk-grid>
-                            <ul>
-                                <li>Godot</li>
-                                <li>Unity</li>
-                                <li>Blender</li>
-                                <li>Sourcetree</li>
-                            </ul>
-                            <ul>
-                                <li>Google Drive</li>
-                                <li>Autodesk Sketchbook</li>
-                                <li>Trello</li>
-                            </ul>
-                        </div>
-                        <br>
-
-                        <strong>Image and Sound Editing</strong>
-                        <div class="uk-child_width-1-2 uk-margin-small-top" uk-grid>
-                            <ul>
-                                <li>Krita</li>
-                                <li>Gimp</li>
-                            </ul>
-                            <ul>
-                                <li>Audacity</li>
-                            </ul>
-                        </div>
-                        <br>
-
-                        <strong>Front-End Web Development</strong>
-                        <div class="uk-margin-small-top" uk-grid>
-                            <ul>
-                                <li>HTML5, CSS3, JavaScript</li>
-                                <li>Bootstrap 4, UIkit</li>
-                                <li>ThreeJS & BabylonJS</li>
-                            </ul>
-                        </div>
-                    </section>
-        
                     <section id="projects">
-                        <div class="uk-child-width-1-2@s uk-child-width-1-3@l uk-grid-small uk-grid-match" uk-grid>
+                        <div class="uk-child-width-1-2@s uk-child-width-1-3@l uk-child-width-1-4@xl uk-grid-small uk-grid-match" uk-grid>
                             <div>
-                                <div class="uk-card uk-card-default">
+                                <div class="uk-card uk-card-default uk-card-hover">
+                                    <div class="uk-card-media-top">
+                                        <div class="uk-height-small uk-background-cover" data-src="img/larimar.png" uk-img></div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Larimar (in development)</h3>
+                                        <p>Solo dev</p>
+                                        <a class="uk-link-muted" href="https://moisesjpelaez.itch.io/larimar" target="_blank">Prototype</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-hover">
                                     <div class="uk-card-media-top">
                                         <div class="uk-height-small uk-background-cover" data-src="img/astra.png" uk-img></div>
                                     </div>
                                     <div class="uk-card-body">
                                         <h3 class="uk-card-title">Astra</h3>
                                         <p>Programming & Game Design/Balance</p>
-                                        <a class="uk-link-muted" href="https://play.google.com/store/apps/details?id=com.tbdsoft.asteroiding" target="_blank">Download from Google Play</a>
+                                        <a class="uk-link-muted" href="https://play.google.com/store/apps/details?id=com.tbdsoft.asteroiding" target="_blank">Google Play</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div>
-                                <div class="uk-card uk-card-default">
+                                <div class="uk-card uk-card-default uk-card-hover">
                                     <div class="uk-card-media-top">
                                         <div class="uk-height-small uk-background-cover" data-src="img/wormy.png" uk-img></div>
                                     </div>
                                     <div class="uk-card-body">
                                         <h3 class="uk-card-title">Wormy</h3>
                                         <p>Programming</p>
-                                        <a class="uk-link-muted" href="https://play.google.com/store/apps/details?id=com.tbdgames.wormy" target="_blank">Download from Google Play</a>
+                                        <a class="uk-link-muted" href="https://play.google.com/store/apps/details?id=com.tbdgames.wormy" target="_blank">Google Play</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div>
-                                <div class="uk-card uk-card-default">
+                                <div class="uk-card uk-card-default uk-card-hover">
                                     <div class="uk-card-media-top">
                                         <div class="uk-height-small uk-background-cover" data-src="img/emilys-journey.png" uk-img></div>
                                     </div>
                                     <div class="uk-card-body">
                                         <h3 class="uk-card-title">Emily's Journey</h3>
                                         <p>Game Design, Programming & Props Modeling</p>
-                                        <a class="uk-link-muted" href="https://moisesjpelaez.itch.io/emilys-journey" target="_blank">Prototype site</a>
+                                        <a class="uk-link-muted" href="https://moisesjpelaez.itch.io/emilys-journey" target="_blank">Prototype</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div>
-                                <div class="uk-card uk-card-default">
+                                <div class="uk-card uk-card-default uk-card-hover">
                                     <div class="uk-card-media-top">
                                         <div class="uk-height-small uk-background-cover" data-src="img/gallina-hen-reloaded.jpg" uk-img></div>
                                     </div>
                                     <div class="uk-card-body">
                                         <h3 class="uk-card-title">Gallina Hen Reloaded</h3>
                                         <p>Solo dev</p>
-                                        <a class="uk-link-muted" href="https://moisesjpelaez.itch.io/gallina-hen-reloaded" target="_blank">Prototype site</a>
+                                        <a class="uk-link-muted" href="https://moisesjpelaez.itch.io/gallina-hen-reloaded" target="_blank">Prototype</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div>
-                                <div class="uk-card uk-card-default">
+                                <div class="uk-card uk-card-default uk-card-hover">
                                     <div class="uk-card-media-top">
                                         <div class="uk-height-small uk-background-cover" data-src="img/nonelands-demo.jpg" uk-img></div>
                                     </div>
                                     <div class="uk-card-body">
                                         <h3 class="uk-card-title">NoneLands</h3>
                                         <p>Game Design, Programming & Terrain Modeling</p>
-                                        <a class="uk-link-muted" href="https://gamejolt.com/games/nonelands/45528" target="_blank">Demo site</a>
+                                        <a class="uk-link-muted" href="https://gamejolt.com/games/nonelands/45528" target="_blank">Demo</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-        
-                    <section id="formation">
-                        <strong>CalArts - Coursera</strong>
-                        <br>
-                        <small>2016</small>
-                        <p>Game Design: Art and Concepts - Online Specialization</p>
-                        
-                        <strong>ITLA</strong>
-                        <br>
-                        <small>2014</small>
-                        <p>Mechatronics Superior Technician</p>
 
-                        <strong>Languages</strong>
-                        <ul>
-                            <li>Spanish - <em>Native</em></li>
-                            <li>English - <em>Certain fluidity</em></li>
-                        </ul>
+                    <section id="models">
+                        <div uk-alert>Under construction</div>
                     </section>
         
-                    <section id="experience">
-                        <strong>Freelancing</strong>
-                        <br>
-                        <small>2019 - Present</small>
-                        <p>Godot & Unity Developer / Low Poly 3D Modeler</p>
-                        <strong>Pitech SRL</strong>
-                        <br>
-                        <small>2017 - 2019</small>
-                        <p>Educational Content Designer & Developer</p>
-                        <strong>Edu-Zone</strong>
-                        <br>
-                        <small>2015 - 2016</small>
-                        <p>Software Developer & Lead Software Developer</p>  
+                    <section id="resume">
+                        <h3>Skills</h3>
+                        <hr>
+                        <dl class="uk-description-list">
+                            <dt>Game Design</dt>
+                            <dd>
+                                <ul class="uk-margin-left uk-list uk-list-collapse uk-list-circle">
+                                    <li>GDD with synopsis, moodboards, flowchart and prototype</li>
+                                    <li>Gameplay mechanics and progression design</li>
+                                    <li>Basic story telling with three-act structure and character briefs</li>
+                                    <li>Board game prototyping</li>
+                                    <li>Reference collection with Pureref</li>
+                                    <li>Pitch creation</li>
+                                </ul>
+                            </dd>
+                            
+                            <dt>Game Development</dt>
+                            <dd>
+                                <ul class="uk-margin-left uk-list uk-list-collapse uk-list-circle">
+                                    <li>Quick prototyping game ideas</li>
+                                    <li>Third person character controller with camera</li>
+                                    <li>Finite state machine for sequences, player and AI behavior</li>
+                                    <li>Observer pattern for scalability and maintainability</li>
+                                    <li>UI and menus</li>
+                                    <li>Full game controller integration</li>
+                                    <li>Save and loading system</li>
+                                    <li>Adaptative music and randomized sound effects</li>
+                                    <li>Custom editor tools</li>
+                                </ul>
+                            </dd>
+
+                            <dt>3D Modeling</dt>
+                            <dd>
+                                <ul class="uk-margin-left uk-list uk-list-collapse uk-list-circle">
+                                    <li>Low poly characters</li>
+                                    <li>Low poly environment/props modeling</li>
+                                    <li>Material count reduction for performance optimization</li>
+                                    <li>Poly count reduction and mesh flow optimization</li>
+                                    <li>Basic rigging</li>
+                                    <li>Basic animations</li>
+                                    <li>Familiarized with basic sculpting tools using a Wacom tablet</li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        <h3>Work Experience</h3>
+                        <hr>
+                        <dl class="uk-description-list">
+                            <dt>Game Developer & Low Poly 3D Modeler | 2020 - Present</dt>
+                            <dd>Freelancer</dd>
+                            <dd>
+                                <ul class="uk-margin-left uk-list uk-list-collapse uk-list-circle">
+                                    <li>Delivered 2 Android games made with Unity</li>
+                                    <li>Delivered game ready low poly characters and environment/prop models made with Blender</li>
+                                    <li>Delivered an Android game made with Godot</li>
+                                </ul>
+                            </dd>
+
+                            <dt>Content Designer | 2018 - 2019</dt>
+                            <dd>Pitech SRL</dd>
+                            <dd>
+                                <ul class="uk-margin-left uk-list uk-list-collapse uk-list-circle">
+                                    <li>Designed and documented over 50 junior school math exercises and tutorials</li>
+                                </ul>
+                            </dd>
+
+                            <dt>Unity Developer | 2017 - 2018</dt>
+                            <dd>Pitech SRL</dd>
+                            <dd>
+                                <ul class="uk-margin-left uk-list uk-list-collapse uk-list-circle">
+                                    <li>Programmed over 200 junior school math exercises with Unity and PHP</li>
+                                </ul>
+                            </dd>
+
+                            <dt>Lead Software Developer</dt>
+                            <dd>Edu-zone | 2016</dd>
+                            <dd>
+                                <ul class="uk-margin-left uk-list uk-list-collapse uk-list-circle">
+                                    <li>Organized tasks, coordinated the team's workflow with Trello and reviewed content created by the Software Department</li>
+                                    <li>Developed and styled over 150 junior school exercises with HTML5, CSS3, Javascript, jQuery, ThreeJS and CreateJS</li>
+                                </ul>
+                            </dd>
+
+                            <dt>Front-End Developer</dt>
+                            <dd>Edu-zone | 2015 - 2016</dd>
+                            <dd>
+                                <ul class="uk-margin-left uk-list uk-list-collapse uk-list-circle">
+                                    <li>Developed and styled over 250 junior school exercises with HTML5, CSS3, Javascript, jQuery, ThreeJS and CreateJS</li>
+                                </ul>
+                            </dd>
+                        </dl> 
+
+                        <h3>Awards</h3>
+                        <hr>
+                        <dl class="uk-description-list">
+                            <dt>Gallina Hen – 2nd Place</dt>
+                            <dd>GameJam Santo Domingo | 2015</dd>
+
+                            <dt>Nonelands Alpha Demo – 1st Place</dt>
+                            <dd>Anime Game Fest | 2014</dd>
+                        </dl>
+
+                        <h3>Formation</h3>
+                        <hr>
+                        <dl class="uk-description-list">
+                            <dt>Game Design: Art and Concepts Specialization</dt>
+                            <dd>CalArts, Coursera | 2016</dd>
+
+                            <dt>Mechatronics Superior Technician</dt>
+                            <dd>ITLA, Santo Domingo | 2014</dd>
+                        </dl>
+
+                        <h3>Languages</h3>
+                        <hr>
+                        <dl class="uk-description-list">
+                            <dt>Spanish</dt>
+                            <dd>Native</dd>
+
+                            <dt>English</dt>
+                            <dd>Certain fluidity</dd>
+                        </dl>
                     </section>
         
                     <section id="contact" class="uk-text-center">
-                        <p>If you like my work and want to collab for a game feel free to contact me. You can also follow me in my socials.</p>
+                        <p>If you like my work and want to collab feel free to contact me. You can also follow me in my socials.</p>
                         <div class="uk-text-center uk-flex uk-flex-center">
                             <div class="uk-grid-small uk-text-center" uk-grid>
+                                <div><a class="uk-button uk-button-text" href="https://moisesjpelaez.itch.io/" target="_blank"><i class="fab fa-3x fa-itch-io"></i></a></div>
                                 <div><a class="uk-button uk-button-text" href="https://www.instagram.com/moisesjpelaez/" target="_blank"><i class="fab fa-3x fa-instagram-square"></i></a></div>
                                 <div><a class="uk-button uk-button-text" href="https://twitter.com/moisesjpelaez" target="_blank"><i class="fab fa-3x fa-twitter-square"></i></a></div>
-                                <div><a class="uk-button uk-button-text" href="https://moisesjpelaez.itch.io/" target="_blank"><i class="fab fa-3x fa-itch-io"></i></a></div>
+                                <div><a class="uk-button uk-button-text" href="https://www.youtube.com/channel/UCxcGX8FRRMDtD00DqskT_mw" target="_blank"><i class="fab fa-3x fa-youtube"></i></a></div>
                                 <div><a class="uk-button uk-button-text" href="https://www.patreon.com/moisesjpelaez" target="_blank"><i class="fab fa-3x fa-patreon"></i></a></div>
+                                <div><a class="uk-button uk-button-text" href="https://www.linkedin.com/in/moisesjpelaez/" target="_blank"><i class="fab fa-3x fa-linkedin"></i></a></div>
                             </div>
                         </div>
                     </section>
