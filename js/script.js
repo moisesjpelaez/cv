@@ -6,7 +6,7 @@ $(function()
         $(sectionID).fadeIn();
     }
 
-    showSection("#about");
+    showSection("#home");
 
     $(".js-navlink").click(function(){
         event.preventDefault();
