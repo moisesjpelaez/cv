@@ -1,72 +1,19 @@
-/************************************************************/
-/* Fonts */
 
-/* @font-face {
-    font-family: glaciar;
-    src: url("../fonts/GlacialIndifference-Regular.otf");
-} */
-
-/************************************************************/
-/* Scrollbar */
 body::-webkit-scrollbar {
     width: 1em;
 }
+
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
 
-
-/************************************************************/
-/* General tags */
-/* * {
-    font-family: glaciar;
-    -webkit-user-select: none;
-    user-select: none;
-} */
-
 body {
     margin: 0;
     padding: 0;
-}
-
-/* section {
-    padding-top: 13rem;
-} */
-
-/************************************************************/
-/* Jumbotron */
-
-/************************************************************/
-/* Projects */
-
-
-/************************************************************/
-/* Projects */
-.st-img-nonelands {
-    background-image: url("../img/nonelands-demo.jpg");
-}
-
-.st-img-gallinahen {
-    background-image: url("../img/gallina-hen-reloaded.jpg");
-}
-
-.st-img-novadventure {
-    background-image: url("../img/nova-adventure.jpg");
-}
-
-.st-card-img {
-    height: 240px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.st-card {
-    max-width: 540px;
-    border: none;
 }
