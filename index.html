@@ -168,6 +168,7 @@
                                                 <ul>
                                                     <li>Story and narrative design</li>
                                                     <li>Gameplay system and combat design</li>
+                                                    <li>Level and puzzles design</li>
                                                 </ul>
 
                                                 <h4>Game Programming with Godot</h4>
@@ -351,12 +352,13 @@
                                                 <ul>
                                                     <li>Story and narrative design</li>
                                                     <li>Gameplay mechanics, systems and combat design</li>
+                                                    <li>Level design</li>
                                                 </ul>
 
                                                 <h5>Game Programming with Godot</h5>
                                                 <ul>
-                                                    <li>Created a third person character controller from scratch with movement, jump, shoot and aim mode</li>
-                                                    <li>Implemented a third person view camera with aim mode and collision against walls</li>
+                                                    <li>Created a third person character controller from scratch with movement, jump, shoot and aim mode with gamepad support</li>
+                                                    <li>Implemented a third person view camera with aim mode and collision against walls with gamepad support</li>
                                                     <li>Created a target system to easily shoot at enemies</li>
                                                     <li>Programmed the AI behavior for 2 enemies</li>
                                                     <li>Implemented the UI, pause system, options and main menu</li>
@@ -483,23 +485,32 @@
                                     <div class="uk-modal-dialog">
                                         <button class="uk-modal-close uk-close-large uk-position-top-right uk-padding" type="button" uk-close></button>
                                         <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
-                                            <div uk-slider>
-                                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-                                                    <ul class="uk-slider-items uk-child-width-3-4">
-                                                        <li>
-                                                            <div class="uk-height-large uk-background-cover uk-transition-scale-up uk-transition-opaque" data-src="img/projects/larimar.jpg" uk-img></div>
+                                            <div uk-slider="center: true">
+                                                <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1">
+                                                    <ul class="uk-slider-items uk-child-width-3-4 uk-flex-middle">
+                                                        <li class="uk-text-center">
+                                                            <video src="media/nonelands/forest.mp4" loop playsinline uk-video="autoplay: inview"></video>
+                                                        </li>
+                                                        <li class="uk-text-center">
+                                                            <video src="media/nonelands/ice.mp4" loop playsinline uk-video="autoplay: inview"></video>
+                                                        </li>
+                                                        <li class="uk-text-center">
+                                                            <video src="media/nonelands/fire.mp4" loop playsinline uk-video="autoplay: inview"></video>
                                                         </li>
                                                         <li>
-                                                            <div class="uk-height-large uk-background-cover uk-transition-scale-up uk-transition-opaque" data-src="img/projects/larimar.jpg" uk-img></div>
+                                                            <div class="uk-height-large uk-background-contain uk-transition-scale-up uk-transition-opaque" data-src="media/nonelands/nonelands-01.jpg" uk-img></div>
                                                         </li>
                                                         <li>
-                                                            <div class="uk-height-large uk-background-cover uk-transition-scale-up uk-transition-opaque" data-src="img/projects/larimar.jpg" uk-img></div>
+                                                            <div class="uk-height-large uk-background-contain uk-transition-scale-up uk-transition-opaque" data-src="media/nonelands/nonelands-02.jpg" uk-img></div>
                                                         </li>
                                                         <li>
-                                                            <div class="uk-height-large uk-background-cover uk-transition-scale-up uk-transition-opaque" data-src="img/projects/larimar.jpg" uk-img></div>
+                                                            <div class="uk-height-large uk-background-contain uk-transition-scale-up uk-transition-opaque" data-src="media/nonelands/nonelands-03.jpg" uk-img></div>
                                                         </li>
                                                         <li>
-                                                            <div class="uk-height-large uk-background-cover uk-transition-scale-up uk-transition-opaque" data-src="img/projects/larimar.jpg" uk-img></div>
+                                                            <div class="uk-height-large uk-background-contain uk-transition-scale-up uk-transition-opaque" data-src="media/nonelands/nonelands-04.jpg" uk-img></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="uk-height-large uk-background-contain uk-transition-scale-up uk-transition-opaque" data-src="media/nonelands/nonelands-05.jpg" uk-img></div>
                                                         </li>
                                                     </ul>
                                                     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
@@ -509,26 +520,34 @@
                                             </div>
                                             
                                             <div class="uk-padding-large" uk-overflow-auto uk-height-viewport>
-                                                <h2>Larimar</h2>
+                                                <h2>Nonelands</h2>
                                                 <hr>
  
                                                 <h5>Description</h5>
-                                                <p>Larimar is a boss rush game which started in a gamejam. I have been the only dev working on it until now.</p>
+                                                <p>Nonelands is an action adventure game heavily inspired by 3D Zelda games. This alpha demo was made with Unity 4.6.</p>
                                 
                                                 <h5>Game Design</h5>
                                                 <ul>
-                                                    <li>Narrative design</li>
-                                                    <li>Gameplay system and combat design</li>
+                                                    <li>Story and concept ideas design</li>
+                                                    <li>Gameplay mechanics, systems and combat design</li>
+                                                    <li>Level and puzzles design</li>
                                                 </ul>
 
-                                                <h5>Game programming with Godot</h5>
+                                                <h5>Game Programming with Unity</h5>
                                                 <ul>
-                                                    <li>Created a character controller with basic movement, combo attacks, roll and use of different weapons</li>
-                                                    <li>Implemented the AI behavior for 2 bosses using a Hierarchical Finite State Machine system</li>
-                                                    <li>Implemented a simple cutscene system</li>
-                                                    <li>Implemented the UI, pause system and main menu</li>
-                                                    <li>Coded a simple puzzle solving system</li>
-                                                    <li>Created a custom script to import 3D models with automatic configurations</li>
+                                                    <li>Created a third person character controller with an attack combo, jump, pull/push and item grabbing with gamepad support</li>
+                                                    <li>Created a camera for the character with wall collisions and gamepad support</li>
+                                                    <li>Programmed the AI behavior 2 types of enemies and 2 bosses</li>
+                                                    <li>Programmed 3 simple puzzles to solve</li>
+                                                    <li>Programmed camera sequences for short cutscenes</li>
+                                                    <li>Used particle systems for explosions and VFX</li>
+                                                    <li>Used the post processing stack to polish the scene visuals</li>
+                                                </ul>
+
+                                                <h5>3D Modeling with Blender</h5>
+                                                <ul>
+                                                    <li>Modeled the whole level terrain</li>
+                                                    <li>Some texture fixes</li>
                                                 </ul>
                                             </div>
                                         </div>
