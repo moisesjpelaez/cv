@@ -174,6 +174,7 @@
                                                 <ul>
                                                     <li>Created a character controller with basic movement, combo attacks, roll and use of different weapons</li>
                                                     <li>Implemented the AI behavior for 2 bosses using a Hierarchical Finite State Machine system</li>
+                                                    <li>Fully integrated a gamepad with the game and its UI</li>
                                                     <li>Implemented a simple cutscene system</li>
                                                     <li>Implemented the UI, pause system and main menu</li>
                                                     <li>Programmed a simple puzzle solving system</li>
@@ -272,7 +273,7 @@
                                                     <li>Implemented ads with the Google Admob plugin</li>
                                                     <li>Implemented leaderboards and achievement system</li>
                                                     <li>Used the particle system for explosions, drill, the stars in the background etc.</li>
-                                                    <li>Coded a single powerup system</li>
+                                                    <li>Programmed 4 different powerups</li>
                                                     <li>Integrated on screen mobile controller with a joystick and a button</li>
                                                     <li>Integrated SFX and music</li>
                                                 </ul>
@@ -399,23 +400,26 @@
                                     <div class="uk-modal-dialog">
                                         <button class="uk-modal-close uk-close-large uk-position-top-right uk-padding" type="button" uk-close></button>
                                         <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
-                                            <div uk-slider>
-                                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-                                                    <ul class="uk-slider-items uk-child-width-3-4">
-                                                        <li>
-                                                            <div class="uk-height-large uk-background-cover uk-transition-scale-up uk-transition-opaque" data-src="img/projects/larimar.jpg" uk-img></div>
+                                            <div uk-slider="center: true">
+                                                <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1">
+                                                    <ul class="uk-slider-items uk-child-width-3-4 uk-flex-middle">
+                                                        <li class="uk-text-center">
+                                                            <video src="media/gallina-hen-reloaded/prototype.mp4" loop playsinline uk-video="autoplay: inview"></video>
                                                         </li>
                                                         <li>
-                                                            <div class="uk-height-large uk-background-cover uk-transition-scale-up uk-transition-opaque" data-src="img/projects/larimar.jpg" uk-img></div>
+                                                            <div class="uk-height-large uk-background-contain uk-transition-scale-up uk-transition-opaque" data-src="media/gallina-hen-reloaded/ghr-01.jpg" uk-img></div>
                                                         </li>
                                                         <li>
-                                                            <div class="uk-height-large uk-background-cover uk-transition-scale-up uk-transition-opaque" data-src="img/projects/larimar.jpg" uk-img></div>
+                                                            <div class="uk-height-large uk-background-contain uk-transition-scale-up uk-transition-opaque" data-src="media/gallina-hen-reloaded/ghr-02.jpg" uk-img></div>
                                                         </li>
                                                         <li>
-                                                            <div class="uk-height-large uk-background-cover uk-transition-scale-up uk-transition-opaque" data-src="img/projects/larimar.jpg" uk-img></div>
+                                                            <div class="uk-height-large uk-background-contain uk-transition-scale-up uk-transition-opaque" data-src="media/gallina-hen-reloaded/ghr-03.jpg" uk-img></div>
                                                         </li>
                                                         <li>
-                                                            <div class="uk-height-large uk-background-cover uk-transition-scale-up uk-transition-opaque" data-src="img/projects/larimar.jpg" uk-img></div>
+                                                            <div class="uk-height-large uk-background-contain uk-transition-scale-up uk-transition-opaque" data-src="media/gallina-hen-reloaded/ghr-04.jpg" uk-img></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="uk-height-large uk-background-contain uk-transition-scale-up uk-transition-opaque" data-src="media/gallina-hen-reloaded/ghr-05.jpg" uk-img></div>
                                                         </li>
                                                     </ul>
                                                     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
@@ -425,26 +429,33 @@
                                             </div>
                                             
                                             <div class="uk-padding-large" uk-overflow-auto uk-height-viewport>
-                                                <h2>Larimar</h2>
+                                                <h2>Gallina Hen Reloaded</h2>
                                                 <hr>
  
                                                 <h5>Description</h5>
-                                                <p>Larimar is a boss rush game which started in a gamejam. I have been the only dev working on it until now.</p>
+                                                <p>Rescue the chicks and blow up other chickens in this top-down shooter. This was a final project for the Game Design: Art and Concepts Specialization and I slowly kept polishing it over the years.</p>
+                                                <p>I made this prototype all alone, including the UI assets, animations, music and sound effects.</p>
                                 
                                                 <h5>Game Design</h5>
                                                 <ul>
-                                                    <li>Narrative design</li>
-                                                    <li>Gameplay system and combat design</li>
+                                                    <li>Story and narrative design</li>
+                                                    <li>Gameplay mechanics, systems and combat design</li>
                                                 </ul>
 
-                                                <h5>Game programming with Godot</h5>
+                                                <h5>Game Programming with Unity</h5>
                                                 <ul>
-                                                    <li>Created a character controller with basic movement, combo attacks, roll and use of different weapons</li>
-                                                    <li>Implemented the AI behavior for 2 bosses using a Hierarchical Finite State Machine system</li>
-                                                    <li>Implemented a simple cutscene system</li>
-                                                    <li>Implemented the UI, pause system and main menu</li>
-                                                    <li>Coded a simple puzzle solving system</li>
-                                                    <li>Created a custom script to import 3D models with automatic configurations</li>
+                                                    <li>Created a top-down shooter character which aims at the mouse position seamlessly with gamepad</li>
+                                                    <li>Programmed the AI behavior for the chicks and 2 enemies using a Finite State Machine</li>
+                                                    <li>Implemented 3 different power ups</li>
+                                                    <li>Implemented the UI and main menu</li>
+                                                    <li>Used particle systems for explosions and VFX</li>
+                                                    <li>Used the post processing stack to polish the scene visuals</li>
+                                                </ul>
+
+                                                <h5>3D Modeling with Blender</h5>
+                                                <ul>
+                                                    <li>Modeled all the chick and chickens with simple animations</li>
+                                                    <li>Created all the environment models: houses, fences, rocks, trees foliage and clouds</li>
                                                 </ul>
                                             </div>
                                         </div>
